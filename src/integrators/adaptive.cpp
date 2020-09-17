@@ -81,6 +81,11 @@ void Statistics::SamplingLoop(Point2i pixel, const SamplingFunctor &sampleOnce){
     switch (mode) {
     case Mode::ERROR:
         // Divide render between bootstrap and adaptive phases
+        for( long i = 0; i < minSamples; i++) //bootstrap
+          loop();
+        while( !StopCriterion(pixel))
+          loop();
+
     case Mode::TIME:
         // We are in a batch, so take _batchSize_ samples
     case Mode::NORMAL:
@@ -111,11 +116,18 @@ Float Statistics::Sampling(const Pixel &statsPixel) const {
 }
 
 Spectrum Statistics::Variance(const Pixel &statsPixel) const {
-    return 0;
+    return statsPixel.moment2 / ( statsPixel.samples - 1 );
 }
 
 Spectrum Statistics::Error(const Pixel &statsPixel) const {
-    return 0;
+  auto variance = statsPixel.moment2 / ( statsPixel.samples - 1 );
+  auto squared = Sqrt( variance / statsPixel.samples );
+
+  return squared / ( statsPixel.mean + Spectrum(0.01f) );
+
+
+
+
 }
 
 bool Statistics::StopCriterion(Point2i pixel) const {
