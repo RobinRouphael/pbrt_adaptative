@@ -97,6 +97,11 @@ void Statistics::UpdateStats(Point2i pixel, Spectrum &&L) {
     long &samples = statsPixel.samples;
     Spectrum &mean = statsPixel.mean;
     Spectrum &moment2 = statsPixel.moment2;
+    samples += 1;
+    auto delta = L - mean;
+    mean += delta / samples;
+    auto delta2 = L - mean;
+    moment2 += delta * delta2;
 
     // Update the statistics above using Welford's online algorithm
 }
@@ -177,8 +182,8 @@ void VolPathAdaptive::Render(const Scene &scene) {
     Point2i nTiles((sampleExtent.x + tileSize - 1) / tileSize,
                    (sampleExtent.y + tileSize - 1) / tileSize);
 
-    stats.RenderBegin(); //Modified
-    ProgressReporter reporter(nTiles.x * nTiles.y, stats.WorkTitle());
+    stats.RenderBegin(); //Modified start time
+    ProgressReporter reporter(nTiles.x * nTiles.y, stats.WorkTitle()); //Modified
     for (int batch = 0; stats.StartNextBatch(batch); ++batch) {
         ParallelFor2D([&](Point2i tile) {
             // Render section of image corresponding to _tile_
@@ -231,6 +236,8 @@ void VolPathAdaptive::Render(const Scene &scene) {
 
                     // Evaluate radiance along camera ray
                     Spectrum L(0.f);
+
+
                     if (rayWeight > 0)
                         L = Li(ray, scene, *tileSampler, arena, 0);
 
