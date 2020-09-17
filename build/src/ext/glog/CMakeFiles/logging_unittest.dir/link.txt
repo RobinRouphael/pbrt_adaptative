@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -O2 -DNDEBUG  -rdynamic CMakeFiles/logging_unittest.dir/src/logging_unittest.cc.o  -o logging_unittest libglog.a -lpthread 

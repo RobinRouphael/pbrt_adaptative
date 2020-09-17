@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++  -std=c++98 -Wall -Wextra -pedantic  -std=gnu++11 -Wno-conversion-null -O2 -DNDEBUG  -rdynamic CMakeFiles/ftest.dir/ftest.cpp.o  -o ftest -Wl,-rpath,/opt/ccp4/lib ../ptex/libPtex.a -lpthread /opt/ccp4/lib/libz.so 

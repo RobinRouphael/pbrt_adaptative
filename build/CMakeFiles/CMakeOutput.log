@@ -1,0 +1,1971 @@
+The system is: Linux - 4.18.19-100.fc27.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/lib64/ccache/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/3.11.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/lib64/ccache/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/3.11.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ff59e/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_ff59e.dir/build.make CMakeFiles/cmTC_ff59e.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_ff59e.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_ff59e.dir/testCCompiler.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_ff59e.dir/testCCompiler.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ff59e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff59e.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_ff59e.dir/testCCompiler.c.o  -o cmTC_ff59e 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c82e4/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_c82e4.dir/build.make CMakeFiles/cmTC_c82e4.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_c82e4.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_c82e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c82e4.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc     -v -rdynamic CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o  -o cmTC_c82e4 
+Utilisation des specs internes.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Cible : x86_64-redhat-linux
+Configuré avec: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --enable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Modèle de thread: posix
+gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c82e4' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3HF5ef.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c82e4 /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/7 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c82e4' '-mtune=generic' '-march=x86-64'
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_c82e4/fast"]
+  ignore line: [gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_c82e4.dir/build.make CMakeFiles/cmTC_c82e4.dir/build]
+  ignore line: [gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »]
+  ignore line: [gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_c82e4.dir/flags.make » a une date de modification 3240 s dans le futur]
+  ignore line: [Building C object CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_c82e4]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c82e4.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/cc     -v -rdynamic CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o  -o cmTC_c82e4 ]
+  ignore line: [Utilisation des specs internes.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Cible : x86_64-redhat-linux]
+  ignore line: [Configuré avec: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --enable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Modèle de thread: posix]
+  ignore line: [gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_c82e4' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3HF5ef.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c82e4 /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/7 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3HF5ef.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c82e4] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/7] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/7]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/7/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../..]
+    arg [CMakeFiles/cmTC_c82e4.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/7] ==> [/usr/lib/gcc/x86_64-redhat-linux/7]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/7;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9f5d2/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_9f5d2.dir/build.make CMakeFiles/cmTC_9f5d2.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_9f5d2.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_9f5d2.dir/feature_tests.c.o
+/usr/lib64/ccache/cc   -std=c11 -o CMakeFiles/cmTC_9f5d2.dir/feature_tests.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9f5d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f5d2.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_9f5d2.dir/feature_tests.c.o  -o cmTC_9f5d2 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5249b/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_5249b.dir/build.make CMakeFiles/cmTC_5249b.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_5249b.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_5249b.dir/feature_tests.c.o
+/usr/lib64/ccache/cc   -std=c99 -o CMakeFiles/cmTC_5249b.dir/feature_tests.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_5249b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5249b.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_5249b.dir/feature_tests.c.o  -o cmTC_5249b 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_847d7/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_847d7.dir/build.make CMakeFiles/cmTC_847d7.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_847d7.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_847d7.dir/feature_tests.c.o
+/usr/lib64/ccache/cc   -std=c90 -o CMakeFiles/cmTC_847d7.dir/feature_tests.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_847d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_847d7.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_847d7.dir/feature_tests.c.o  -o cmTC_847d7 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b31db/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_b31db.dir/build.make CMakeFiles/cmTC_b31db.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b31db.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_b31db.dir/testCXXCompiler.cxx.o
+/usr/lib64/ccache/c++     -o CMakeFiles/cmTC_b31db.dir/testCXXCompiler.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b31db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b31db.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++       -rdynamic CMakeFiles/cmTC_b31db.dir/testCXXCompiler.cxx.o  -o cmTC_b31db 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b8921/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_b8921.dir/build.make CMakeFiles/cmTC_b8921.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b8921.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o
+/usr/lib64/ccache/c++     -o CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_b8921
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8921.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++      -v -rdynamic CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b8921 
+Utilisation des specs internes.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Cible : x86_64-redhat-linux
+Configuré avec: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --enable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux
+Modèle de thread: posix
+gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b8921' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNoq1hL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b8921 /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/7 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b8921' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_b8921/fast"]
+  ignore line: [gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_b8921.dir/build.make CMakeFiles/cmTC_b8921.dir/build]
+  ignore line: [gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »]
+  ignore line: [gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b8921.dir/flags.make » a une date de modification 3240 s dans le futur]
+  ignore line: [Building CXX object CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/lib64/ccache/c++     -o CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_b8921]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8921.dir/link.txt --verbose=1]
+  ignore line: [/usr/lib64/ccache/c++      -v -rdynamic CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_b8921 ]
+  ignore line: [Utilisation des specs internes.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Cible : x86_64-redhat-linux]
+  ignore line: [Configuré avec: ../configure --enable-bootstrap --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --enable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux]
+  ignore line: [Modèle de thread: posix]
+  ignore line: [gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/7/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/7/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b8921' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/7/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccNoq1hL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b8921 /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/7 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../.. CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccNoq1hL.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b8921] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/7] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/7]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/7/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../..]
+    arg [CMakeFiles/cmTC_b8921.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/7] ==> [/usr/lib/gcc/x86_64-redhat-linux/7]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/7;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_eee09/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_eee09.dir/build.make CMakeFiles/cmTC_eee09.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_eee09.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_eee09.dir/feature_tests.cxx.o
+/usr/lib64/ccache/c++    -std=c++1z -o CMakeFiles/cmTC_eee09.dir/feature_tests.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_eee09
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eee09.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++       -rdynamic CMakeFiles/cmTC_eee09.dir/feature_tests.cxx.o  -o cmTC_eee09 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_9a324/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_9a324.dir/build.make CMakeFiles/cmTC_9a324.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_9a324.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_9a324.dir/feature_tests.cxx.o
+/usr/lib64/ccache/c++    -std=c++14 -o CMakeFiles/cmTC_9a324.dir/feature_tests.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9a324
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a324.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++       -rdynamic CMakeFiles/cmTC_9a324.dir/feature_tests.cxx.o  -o cmTC_9a324 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_786db/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_786db.dir/build.make CMakeFiles/cmTC_786db.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_786db.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_786db.dir/feature_tests.cxx.o
+/usr/lib64/ccache/c++    -std=c++11 -o CMakeFiles/cmTC_786db.dir/feature_tests.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_786db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_786db.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++       -rdynamic CMakeFiles/cmTC_786db.dir/feature_tests.cxx.o  -o cmTC_786db 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_58dc9/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_58dc9.dir/build.make CMakeFiles/cmTC_58dc9.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_58dc9.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_58dc9.dir/feature_tests.cxx.o
+/usr/lib64/ccache/c++    -std=c++98 -o CMakeFiles/cmTC_58dc9.dir/feature_tests.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_58dc9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58dc9.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++       -rdynamic CMakeFiles/cmTC_58dc9.dir/feature_tests.cxx.o  -o cmTC_58dc9 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cfa4b/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_cfa4b.dir/build.make CMakeFiles/cmTC_cfa4b.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_cfa4b.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_cfa4b.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_cfa4b.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cfa4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfa4b.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_cfa4b.dir/CheckIncludeFile.c.o  -o cmTC_cfa4b 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_623b4/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_623b4.dir/build.make CMakeFiles/cmTC_623b4.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_623b4.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_623b4.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_623b4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_623b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_623b4.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_623b4.dir/CheckFunctionExists.c.o  -o cmTC_623b4 -lpthread 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if files alloca.h exist passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8b7f2/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_8b7f2.dir/build.make CMakeFiles/cmTC_8b7f2.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_8b7f2.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_8b7f2.dir/HAVE_ALLOCA_H.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_8b7f2.dir/HAVE_ALLOCA_H.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CheckIncludeFiles/HAVE_ALLOCA_H.c
+Linking C executable cmTC_8b7f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b7f2.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_8b7f2.dir/HAVE_ALLOCA_H.c.o  -o cmTC_8b7f2 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if files memory.h exist passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ee19f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_ee19f.dir/build.make CMakeFiles/cmTC_ee19f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_ee19f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_ee19f.dir/HAVE_MEMORY_H.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_ee19f.dir/HAVE_MEMORY_H.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CheckIncludeFiles/HAVE_MEMORY_H.c
+Linking C executable cmTC_ee19f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee19f.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_ee19f.dir/HAVE_MEMORY_H.c.o  -o cmTC_ee19f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Performing C++ SOURCE FILE Test HAVE_HEX_FP_CONSTANTS succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2e21c/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_2e21c.dir/build.make CMakeFiles/cmTC_2e21c.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_2e21c.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_2e21c.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_HEX_FP_CONSTANTS   -o CMakeFiles/cmTC_2e21c.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2e21c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e21c.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_HEX_FP_CONSTANTS    -rdynamic CMakeFiles/cmTC_2e21c.dir/src.cxx.o  -o cmTC_2e21c 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+int main() { float x = 0x1p-32f; }
+Performing C++ SOURCE FILE Test HAVE_BINARY_CONSTANTS succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cdc6e/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_cdc6e.dir/build.make CMakeFiles/cmTC_cdc6e.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_cdc6e.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_cdc6e.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_BINARY_CONSTANTS   -o CMakeFiles/cmTC_cdc6e.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cdc6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdc6e.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_BINARY_CONSTANTS    -rdynamic CMakeFiles/cmTC_cdc6e.dir/src.cxx.o  -o cmTC_cdc6e 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+int main() { int x = 0b101011; }
+Performing C++ SOURCE FILE Test HAVE_CONSTEXPR succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a5b42/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_a5b42.dir/build.make CMakeFiles/cmTC_a5b42.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_a5b42.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_a5b42.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_CONSTEXPR   -o CMakeFiles/cmTC_a5b42.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a5b42
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5b42.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_CONSTEXPR    -rdynamic CMakeFiles/cmTC_a5b42.dir/src.cxx.o  -o cmTC_a5b42 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+int main() { constexpr int x = 0; }
+Performing C++ SOURCE FILE Test HAVE_ALIGNAS succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f9c3f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_f9c3f.dir/build.make CMakeFiles/cmTC_f9c3f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_f9c3f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_f9c3f.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNAS   -o CMakeFiles/cmTC_f9c3f.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f9c3f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9c3f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNAS    -rdynamic CMakeFiles/cmTC_f9c3f.dir/src.cxx.o  -o cmTC_f9c3f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+struct alignas(32) Foo { char x; }; int main() { }
+Performing C++ SOURCE FILE Test HAVE_ALIGNOF succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bedb7/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_bedb7.dir/build.make CMakeFiles/cmTC_bedb7.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_bedb7.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_bedb7.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNOF   -o CMakeFiles/cmTC_bedb7.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bedb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bedb7.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ALIGNOF    -rdynamic CMakeFiles/cmTC_bedb7.dir/src.cxx.o  -o cmTC_bedb7 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+int main() { int x = alignof(double); }
+Performing C++ SOURCE FILE Test HAVE_ITIMER succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1f20a/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_1f20a.dir/build.make CMakeFiles/cmTC_1f20a.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_1f20a.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_1f20a.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ITIMER   -o CMakeFiles/cmTC_1f20a.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1f20a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f20a.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ITIMER    -rdynamic CMakeFiles/cmTC_1f20a.dir/src.cxx.o  -o cmTC_1f20a 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Return value: 1
+Source file was:
+
+#include <signal.h>
+#include <string.h>
+#include <sys/time.h>
+void ReportProfileSample(int, siginfo_t *, void *) { }
+int main() {
+    struct sigaction sa;
+    memset(&sa, 0, sizeof(sa));
+    sa.sa_sigaction = ReportProfileSample;
+    sa.sa_flags = SA_RESTART | SA_SIGINFO;
+    sigemptyset(&sa.sa_mask);
+    sigaction(SIGPROF, &sa, NULL);
+    static struct itimerval timer;
+    return setitimer(ITIMER_PROF, &timer, NULL) == 0 ? 0 : 1;
+}
+
+Performing C++ SOURCE FILE Test HAVE_NONPOD_IN_UNIONS succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6f431/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_6f431.dir/build.make CMakeFiles/cmTC_6f431.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_6f431.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_6f431.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NONPOD_IN_UNIONS   -o CMakeFiles/cmTC_6f431.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6f431
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f431.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NONPOD_IN_UNIONS    -rdynamic CMakeFiles/cmTC_6f431.dir/src.cxx.o  -o cmTC_6f431 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+class Bar { public: Bar() { x = 0; } float x; };
+struct Foo { union { int x[10]; Bar b; }; Foo() : b() { } };
+int main() { Foo f; }
+
+Performing C++ SOURCE FILE Test HAVE_MMAP succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b79b1/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_b79b1.dir/build.make CMakeFiles/cmTC_b79b1.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b79b1.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_b79b1.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_MMAP   -o CMakeFiles/cmTC_b79b1.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b79b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b79b1.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_MMAP    -rdynamic CMakeFiles/cmTC_b79b1.dir/src.cxx.o  -o cmTC_b79b1 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+int main() {
+   int fd = open("foo", O_RDONLY);
+   struct stat s;
+   fstat(fd, &s);
+   size_t len = s.st_size;
+   void *ptr = mmap(0, len, PROT_READ, MAP_FILE | MAP_SHARED, fd, 0);
+   munmap(ptr, len);   
+}
+
+Performing C++ SOURCE FILE Test HAVE_ATTRIBUTE_NOINLINE succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7a401/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_7a401.dir/build.make CMakeFiles/cmTC_7a401.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_7a401.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_7a401.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_ATTRIBUTE_NOINLINE   -o CMakeFiles/cmTC_7a401.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7a401
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a401.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_ATTRIBUTE_NOINLINE    -rdynamic CMakeFiles/cmTC_7a401.dir/src.cxx.o  -o cmTC_7a401 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+__attribute__((noinline)) void foo() { }
+int main() { }
+Performing C++ SOURCE FILE Test HAVE_POSIX_MEMALIGN succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d83aa/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_d83aa.dir/build.make CMakeFiles/cmTC_d83aa.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_d83aa.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_d83aa.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_POSIX_MEMALIGN   -o CMakeFiles/cmTC_d83aa.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d83aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d83aa.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_POSIX_MEMALIGN    -rdynamic CMakeFiles/cmTC_d83aa.dir/src.cxx.o  -o cmTC_d83aa 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <stdlib.h>
+int main() {
+  void *ptr;
+  posix_memalign(&ptr, 32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_MEMALIGN succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b0602/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_b0602.dir/build.make CMakeFiles/cmTC_b0602.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b0602.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_b0602.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_MEMALIGN   -o CMakeFiles/cmTC_b0602.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b0602
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0602.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_MEMALIGN    -rdynamic CMakeFiles/cmTC_b0602.dir/src.cxx.o  -o cmTC_b0602 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <malloc.h>
+int main() {
+    void *ptr = memalign(32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_THREAD_LOCAL succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_54daf/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_54daf.dir/build.make CMakeFiles/cmTC_54daf.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_54daf.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_54daf.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_THREAD_LOCAL   -o CMakeFiles/cmTC_54daf.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_54daf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54daf.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_THREAD_LOCAL    -rdynamic CMakeFiles/cmTC_54daf.dir/src.cxx.o  -o cmTC_54daf 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#ifdef __CYGWIN__
+// Hack to work around https://gcc.gnu.org/bugzilla/show_bug.cgi?id=64697
+#error "No thread_local on cygwin"
+#endif  // __CYGWIN__
+thread_local int x; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_89844/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_89844.dir/build.make CMakeFiles/cmTC_89844.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_89844.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_89844.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE___THREAD   -o CMakeFiles/cmTC_89844.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_89844
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89844.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE___THREAD    -rdynamic CMakeFiles/cmTC_89844.dir/src.cxx.o  -o cmTC_89844 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+__thread int x; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_GCC_INLINE_ASM_AVX succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ed144/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_ed144.dir/build.make CMakeFiles/cmTC_ed144.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_ed144.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_ed144.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_GCC_INLINE_ASM_AVX   -o CMakeFiles/cmTC_ed144.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ed144
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed144.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_GCC_INLINE_ASM_AVX    -rdynamic CMakeFiles/cmTC_ed144.dir/src.cxx.o  -o cmTC_ed144 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+	int main()
+	{
+	 #if defined(__GNUC__) && defined(__SSE2__)
+		 int n   = 0;
+		 int eax = 0;
+		 int edx = 0;
+		 __asm__(
+			 "xgetbv     ;"
+			 "vzeroupper  "
+			 : "=a"(eax), "=d"(edx) : "c"(n) : );
+	 #else
+		 #error No GCC style inline asm supported for AVX instructions
+	 #endif
+	}
+	
+Performing C++ SOURCE FILE Test HAVE_SYSCONF_NPROCESSORS_ONLN succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_13c3b/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_13c3b.dir/build.make CMakeFiles/cmTC_13c3b.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_13c3b.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_13c3b.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_SYSCONF_NPROCESSORS_ONLN   -o CMakeFiles/cmTC_13c3b.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_13c3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13c3b.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -Wno-unused-result -Wno-deprecated -DHAVE_SYSCONF_NPROCESSORS_ONLN    -rdynamic CMakeFiles/cmTC_13c3b.dir/src.cxx.o  -o cmTC_13c3b 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+    #include <unistd.h>
+    int main()
+    {
+        sysconf(_SC_NPROCESSORS_ONLN);
+    }
+    
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_391d6/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_391d6.dir/build.make CMakeFiles/cmTC_391d6.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_391d6.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_391d6.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_391d6.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_391d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_391d6.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_391d6.dir/CheckIncludeFile.c.o  -o cmTC_391d6 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file execinfo.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8ab33/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_8ab33.dir/build.make CMakeFiles/cmTC_8ab33.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_8ab33.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_8ab33.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_8ab33.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8ab33
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ab33.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_8ab33.dir/CheckIncludeFile.c.o  -o cmTC_8ab33 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file glob.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6c622/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_6c622.dir/build.make CMakeFiles/cmTC_6c622.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_6c622.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_6c622.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_6c622.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6c622
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c622.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_6c622.dir/CheckIncludeFile.c.o  -o cmTC_6c622 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_46c1e/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_46c1e.dir/build.make CMakeFiles/cmTC_46c1e.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_46c1e.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_46c1e.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_46c1e.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_46c1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c1e.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_46c1e.dir/CheckIncludeFile.c.o  -o cmTC_46c1e 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file pwd.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1549f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_1549f.dir/build.make CMakeFiles/cmTC_1549f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_1549f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_1549f.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_1549f.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1549f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1549f.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_1549f.dir/CheckIncludeFile.c.o  -o cmTC_1549f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c157e/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_c157e.dir/build.make CMakeFiles/cmTC_c157e.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_c157e.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_c157e.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_c157e.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c157e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c157e.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_c157e.dir/CheckIncludeFile.c.o  -o cmTC_c157e 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_24f3c/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_24f3c.dir/build.make CMakeFiles/cmTC_24f3c.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_24f3c.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_24f3c.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_24f3c.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_24f3c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24f3c.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_24f3c.dir/CheckIncludeFile.c.o  -o cmTC_24f3c 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5d299/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_5d299.dir/build.make CMakeFiles/cmTC_5d299.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_5d299.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_5d299.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_5d299.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5d299
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d299.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_5d299.dir/CheckIncludeFile.c.o  -o cmTC_5d299 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_eb940/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_eb940.dir/build.make CMakeFiles/cmTC_eb940.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_eb940.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_eb940.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_eb940.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_eb940
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb940.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_eb940.dir/CheckIncludeFile.c.o  -o cmTC_eb940 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_748a0/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_748a0.dir/build.make CMakeFiles/cmTC_748a0.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_748a0.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_748a0.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_748a0.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_748a0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_748a0.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_748a0.dir/CheckIncludeFile.c.o  -o cmTC_748a0 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file sys/syscall.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_587be/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_587be.dir/build.make CMakeFiles/cmTC_587be.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_587be.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_587be.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_587be.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_587be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_587be.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_587be.dir/CheckIncludeFile.c.o  -o cmTC_587be 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_26457/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_26457.dir/build.make CMakeFiles/cmTC_26457.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_26457.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_26457.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_26457.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_26457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26457.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_26457.dir/CheckIncludeFile.c.o  -o cmTC_26457 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_4f117/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_4f117.dir/build.make CMakeFiles/cmTC_4f117.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_4f117.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_4f117.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_4f117.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4f117
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f117.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_4f117.dir/CheckIncludeFile.c.o  -o cmTC_4f117 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file sys/utsname.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d11f3/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_d11f3.dir/build.make CMakeFiles/cmTC_d11f3.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_d11f3.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_d11f3.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_d11f3.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d11f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d11f3.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_d11f3.dir/CheckIncludeFile.c.o  -o cmTC_d11f3 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file syscall.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_04787/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_04787.dir/build.make CMakeFiles/cmTC_04787.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_04787.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_04787.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_04787.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_04787
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04787.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_04787.dir/CheckIncludeFile.c.o  -o cmTC_04787 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bdb7e/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_bdb7e.dir/build.make CMakeFiles/cmTC_bdb7e.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_bdb7e.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_bdb7e.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_bdb7e.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_bdb7e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb7e.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_bdb7e.dir/CheckIncludeFile.c.o  -o cmTC_bdb7e 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file ucontext.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f4c5f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_f4c5f.dir/build.make CMakeFiles/cmTC_f4c5f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_f4c5f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_f4c5f.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_f4c5f.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f4c5f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4c5f.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_f4c5f.dir/CheckIncludeFile.c.o  -o cmTC_f4c5f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_48242/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_48242.dir/build.make CMakeFiles/cmTC_48242.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_48242.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_48242.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_48242.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_48242
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48242.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_48242.dir/CheckIncludeFile.c.o  -o cmTC_48242 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file unwind.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_13d56/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_13d56.dir/build.make CMakeFiles/cmTC_13d56.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_13d56.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_13d56.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_13d56.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_13d56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13d56.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_13d56.dir/CheckIncludeFile.c.o  -o cmTC_13d56 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file ext/hash_map exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_82f48/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_82f48.dir/build.make CMakeFiles/cmTC_82f48.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_82f48.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_82f48.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_82f48.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/7/ext/hash_map:60:0,
+                 from /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/7/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+Linking CXX executable cmTC_82f48
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82f48.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_82f48.dir/CheckIncludeFile.cxx.o  -o cmTC_82f48 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file ext/hash_set exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_02c57/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_02c57.dir/build.make CMakeFiles/cmTC_02c57.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_02c57.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_02c57.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_02c57.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/7/ext/hash_set:60:0,
+                 from /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/7/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+Linking CXX executable cmTC_02c57
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02c57.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_02c57.dir/CheckIncludeFile.cxx.o  -o cmTC_02c57 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file ext/slist exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_28d1f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_28d1f.dir/build.make CMakeFiles/cmTC_28d1f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_28d1f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_28d1f.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_28d1f.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_28d1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28d1f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_28d1f.dir/CheckIncludeFile.cxx.o  -o cmTC_28d1f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file tr1/unordered_map exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c3f1f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_c3f1f.dir/build.make CMakeFiles/cmTC_c3f1f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_c3f1f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_c3f1f.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_c3f1f.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_c3f1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3f1f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_c3f1f.dir/CheckIncludeFile.cxx.o  -o cmTC_c3f1f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file tr1/unordered_set exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_edf19/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_edf19.dir/build.make CMakeFiles/cmTC_edf19.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_edf19.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_edf19.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_edf19.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_edf19
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edf19.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_edf19.dir/CheckIncludeFile.cxx.o  -o cmTC_edf19 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file unordered_map exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b09ae/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_b09ae.dir/build.make CMakeFiles/cmTC_b09ae.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b09ae.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_b09ae.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_b09ae.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_b09ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b09ae.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_b09ae.dir/CheckIncludeFile.cxx.o  -o cmTC_b09ae 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file unordered_set exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_21d3f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_21d3f.dir/build.make CMakeFiles/cmTC_21d3f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_21d3f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_21d3f.dir/CheckIncludeFile.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null    -o CMakeFiles/cmTC_21d3f.dir/CheckIncludeFile.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_21d3f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21d3f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null     -rdynamic CMakeFiles/cmTC_21d3f.dir/CheckIncludeFile.cxx.o  -o cmTC_21d3f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e8e6a/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_e8e6a.dir/build.make CMakeFiles/cmTC_e8e6a.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_e8e6a.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_e8e6a.dir/CheckIncludeFile.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_e8e6a.dir/CheckIncludeFile.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e8e6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8e6a.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_e8e6a.dir/CheckIncludeFile.c.o  -o cmTC_e8e6a 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining size of u_int16_t passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_977bb/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_977bb.dir/build.make CMakeFiles/cmTC_977bb.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_977bb.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_977bb.dir/HAVE_U_INT16_T.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_977bb.dir/HAVE_U_INT16_T.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CheckTypeSize/HAVE_U_INT16_T.c
+Linking C executable cmTC_977bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_977bb.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_977bb.dir/HAVE_U_INT16_T.c.o  -o cmTC_977bb 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining size of uint16_t passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ae3f9/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_ae3f9.dir/build.make CMakeFiles/cmTC_ae3f9.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_ae3f9.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_ae3f9.dir/HAVE_UINT16_T.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_ae3f9.dir/HAVE_UINT16_T.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CheckTypeSize/HAVE_UINT16_T.c
+Linking C executable cmTC_ae3f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae3f9.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_ae3f9.dir/HAVE_UINT16_T.c.o  -o cmTC_ae3f9 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_c8e7d/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_c8e7d.dir/build.make CMakeFiles/cmTC_c8e7d.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_c8e7d.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_c8e7d.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=fcntl   -o CMakeFiles/cmTC_c8e7d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c8e7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8e7d.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=fcntl    -rdynamic CMakeFiles/cmTC_c8e7d.dir/CheckFunctionExists.c.o  -o cmTC_c8e7d 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the function pread exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a906b/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_a906b.dir/build.make CMakeFiles/cmTC_a906b.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_a906b.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_a906b.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pread   -o CMakeFiles/cmTC_a906b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a906b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a906b.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=pread    -rdynamic CMakeFiles/cmTC_a906b.dir/CheckFunctionExists.c.o  -o cmTC_a906b 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the function pwrite exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_41c33/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_41c33.dir/build.make CMakeFiles/cmTC_41c33.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_41c33.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_41c33.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pwrite   -o CMakeFiles/cmTC_41c33.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_41c33
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41c33.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=pwrite    -rdynamic CMakeFiles/cmTC_41c33.dir/CheckFunctionExists.c.o  -o cmTC_41c33 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the function sigaction exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_aa71f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_aa71f.dir/build.make CMakeFiles/cmTC_aa71f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_aa71f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_aa71f.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=sigaction   -o CMakeFiles/cmTC_aa71f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aa71f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa71f.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=sigaction    -rdynamic CMakeFiles/cmTC_aa71f.dir/CheckFunctionExists.c.o  -o cmTC_aa71f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Determining if the function sigaltstack exists passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b5675/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_b5675.dir/build.make CMakeFiles/cmTC_b5675.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_b5675.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_b5675.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=sigaltstack   -o CMakeFiles/cmTC_b5675.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b5675
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5675.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=sigaltstack    -rdynamic CMakeFiles/cmTC_b5675.dir/CheckFunctionExists.c.o  -o cmTC_b5675 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_DEPRECATED succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2ce46/fast"
+gmake: Warning: File 'Makefile' has modification time 3240 s in the future
+/usr/bin/gmake -f CMakeFiles/cmTC_2ce46.dir/build.make CMakeFiles/cmTC_2ce46.dir/build
+gmake[1]: Entering directory '/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp'
+gmake[1]: Warning: File 'CMakeFiles/cmTC_2ce46.dir/flags.make' has modification time 3240 s in the future
+Building CXX object CMakeFiles/cmTC_2ce46.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NO_DEPRECATED   -Wno-deprecated -o CMakeFiles/cmTC_2ce46.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2ce46
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ce46.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NO_DEPRECATED    -rdynamic CMakeFiles/cmTC_2ce46.dir/src.cxx.o  -o cmTC_2ce46 
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Leaving directory '/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp'
+gmake: warning:  Clock skew detected.  Your build may be incomplete.
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e9a8b/fast"
+gmake: Warning: File 'Makefile' has modification time 3240 s in the future
+/usr/bin/gmake -f CMakeFiles/cmTC_e9a8b.dir/build.make CMakeFiles/cmTC_e9a8b.dir/build
+gmake[1]: Entering directory '/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp'
+gmake[1]: Warning: File 'CMakeFiles/cmTC_e9a8b.dir/flags.make' has modification time 3240 s in the future
+Building CXX object CMakeFiles/cmTC_e9a8b.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS   -Wno-unnamed-type-template-args -o CMakeFiles/cmTC_e9a8b.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e9a8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e9a8b.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS    -rdynamic CMakeFiles/cmTC_e9a8b.dir/src.cxx.o  -o cmTC_e9a8b 
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Leaving directory '/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp'
+gmake: warning:  Clock skew detected.  Your build may be incomplete.
+
+Source file was:
+int main() { return 0; }
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7e7b2/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_7e7b2.dir/build.make CMakeFiles/cmTC_7e7b2.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_7e7b2.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_7e7b2.dir/CheckSymbolExists.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_7e7b2.dir/CheckSymbolExists.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7e7b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e7b2.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_7e7b2.dir/CheckSymbolExists.c.o  -o cmTC_7e7b2 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+File /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__ succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f8ff0/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_f8ff0.dir/build.make CMakeFiles/cmTC_f8ff0.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_f8ff0.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_f8ff0.dir/src.c.o
+/usr/lib64/ccache/cc   -DHAVE___ATTRIBUTE__   -o CMakeFiles/cmTC_f8ff0.dir/src.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f8ff0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8ff0.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DHAVE___ATTRIBUTE__    -rdynamic CMakeFiles/cmTC_f8ff0.dir/src.c.o  -o cmTC_f8ff0 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((unused));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_DEFAULT succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_baf07/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_baf07.dir/build.make CMakeFiles/cmTC_baf07.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_baf07.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_baf07.dir/src.c.o
+/usr/lib64/ccache/cc   -DHAVE___ATTRIBUTE__VISIBILITY_DEFAULT   -o CMakeFiles/cmTC_baf07.dir/src.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c
+/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c:3:1: warning: attribut « visibility » ignoré [-Wattributes]
+ static void foo(void) __attribute__ ((visibility("default")));
+ ^~~~~~
+Linking C executable cmTC_baf07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_baf07.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DHAVE___ATTRIBUTE__VISIBILITY_DEFAULT    -rdynamic CMakeFiles/cmTC_baf07.dir/src.c.o  -o cmTC_baf07 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("default")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___ATTRIBUTE__VISIBILITY_HIDDEN succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_755fc/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_755fc.dir/build.make CMakeFiles/cmTC_755fc.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_755fc.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_755fc.dir/src.c.o
+/usr/lib64/ccache/cc   -DHAVE___ATTRIBUTE__VISIBILITY_HIDDEN   -o CMakeFiles/cmTC_755fc.dir/src.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c
+/home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c:3:1: warning: attribut « visibility » ignoré [-Wattributes]
+ static void foo(void) __attribute__ ((visibility("hidden")));
+ ^~~~~~
+Linking C executable cmTC_755fc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_755fc.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DHAVE___ATTRIBUTE__VISIBILITY_HIDDEN    -rdynamic CMakeFiles/cmTC_755fc.dir/src.c.o  -o cmTC_755fc 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <stdlib.h>
+static void foo(void) __attribute__ ((visibility("hidden")));
+int main(void) { return 0; }
+
+Performing C SOURCE FILE Test HAVE___BUILTIN_EXPECT succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7817d/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_7817d.dir/build.make CMakeFiles/cmTC_7817d.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_7817d.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_7817d.dir/src.c.o
+/usr/lib64/ccache/cc   -DHAVE___BUILTIN_EXPECT   -o CMakeFiles/cmTC_7817d.dir/src.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7817d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7817d.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DHAVE___BUILTIN_EXPECT    -rdynamic CMakeFiles/cmTC_7817d.dir/src.c.o  -o cmTC_7817d 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+int main(void) { if (__builtin_expect(0, 0)) return 1; return 0; }
+
+Performing C SOURCE FILE Test HAVE___SYNC_VAL_COMPARE_AND_SWAP succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a8e20/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_a8e20.dir/build.make CMakeFiles/cmTC_a8e20.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_a8e20.dir/flags.make » a une date de modification 3240 s dans le futur
+Building C object CMakeFiles/cmTC_a8e20.dir/src.c.o
+/usr/lib64/ccache/cc   -DHAVE___SYNC_VAL_COMPARE_AND_SWAP   -o CMakeFiles/cmTC_a8e20.dir/src.c.o   -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a8e20
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8e20.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DHAVE___SYNC_VAL_COMPARE_AND_SWAP    -rdynamic CMakeFiles/cmTC_a8e20.dir/src.c.o  -o cmTC_a8e20 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+int main(void)
+{
+  int a; if (__sync_val_compare_and_swap(&a, 0, 1)) return 1; return 0;
+}
+
+Performing C++ SOURCE FILE Test STL_STD_NAMESPACE succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_00f2f/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_00f2f.dir/build.make CMakeFiles/cmTC_00f2f.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_00f2f.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_00f2f.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DSTL_STD_NAMESPACE   -o CMakeFiles/cmTC_00f2f.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_00f2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00f2f.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DSTL_STD_NAMESPACE    -rdynamic CMakeFiles/cmTC_00f2f.dir/src.cxx.o  -o cmTC_00f2f 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <vector>
+std::vector<int> t; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_USING_OPERATOR succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_92eb2/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_92eb2.dir/build.make CMakeFiles/cmTC_92eb2.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_92eb2.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_92eb2.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_USING_OPERATOR   -o CMakeFiles/cmTC_92eb2.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_92eb2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92eb2.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_USING_OPERATOR    -rdynamic CMakeFiles/cmTC_92eb2.dir/src.cxx.o  -o cmTC_92eb2 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+#include <iostream>
+std::ostream& operator<<(std::ostream&, struct s);
+using ::operator<<;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_NAMESPACES succeeded with the following output:
+Change Dir: /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7f43c/fast"
+gmake: Avertissement : le fichier « Makefile » a une date de modification 3240 s dans le futur
+/usr/bin/gmake -f CMakeFiles/cmTC_7f43c.dir/build.make CMakeFiles/cmTC_7f43c.dir/build
+gmake[1] : on entre dans le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake[1]: Avertissement : le fichier « CMakeFiles/cmTC_7f43c.dir/flags.make » a une date de modification 3240 s dans le futur
+Building CXX object CMakeFiles/cmTC_7f43c.dir/src.cxx.o
+/usr/lib64/ccache/c++    -std=gnu++11 -Wno-conversion-null -DHAVE_NAMESPACES   -o CMakeFiles/cmTC_7f43c.dir/src.cxx.o -c /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7f43c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f43c.dir/link.txt --verbose=1
+/usr/lib64/ccache/c++   -std=gnu++11 -Wno-conversion-null -DHAVE_NAMESPACES    -rdynamic CMakeFiles/cmTC_7f43c.dir/src.cxx.o  -o cmTC_7f43c 
+gmake[1]: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+gmake[1] : on quitte le répertoire « /home/rpr2264a/pbrt-adaptive/build/CMakeFiles/CMakeTmp »
+gmake: AVERTISSEMENT : décalage d'horloge détecté. La construction peut être incomplète.
+
+Source file was:
+
+namespace Outer { namespace Inner { int i = 0; }}
+using namespace Outer::Inner;;
+int main() { return i; }
+

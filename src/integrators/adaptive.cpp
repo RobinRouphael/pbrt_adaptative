@@ -177,7 +177,7 @@ void VolPathAdaptive::Render(const Scene &scene) {
     Point2i nTiles((sampleExtent.x + tileSize - 1) / tileSize,
                    (sampleExtent.y + tileSize - 1) / tileSize);
 
-    stats.RenderBegin();
+    stats.RenderBegin(); //Modified
     ProgressReporter reporter(nTiles.x * nTiles.y, stats.WorkTitle());
     for (int batch = 0; stats.StartNextBatch(batch); ++batch) {
         ParallelFor2D([&](Point2i tile) {
@@ -206,7 +206,7 @@ void VolPathAdaptive::Render(const Scene &scene) {
                 {
                     ProfilePhase pp(Prof::StartPixel);
                     tileSampler->StartPixel(pixel);
-                    tileSampler->SetSampleNumber(batch * stats.BatchSize());
+                    tileSampler->SetSampleNumber(batch * stats.BatchSize()); //Modified
                 }
 
                 // Do this check after the StartPixel() call; this keeps
@@ -216,7 +216,7 @@ void VolPathAdaptive::Render(const Scene &scene) {
                 if (!InsideExclusive(pixel, pixelBounds))
                     continue;
 
-                stats.SamplingLoop(pixel, [&]() {
+                stats.SamplingLoop(pixel, [&]() { //Modified
                     // Initialize _CameraSample_ for current sample
                     CameraSample cameraSample =
                         tileSampler->GetCameraSample(pixel);
