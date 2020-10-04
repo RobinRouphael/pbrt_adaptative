@@ -123,10 +123,7 @@ Spectrum Statistics::Error(const Pixel &statsPixel) const {
   auto variance = statsPixel.moment2 / ( statsPixel.samples - 1 );
   auto squared = Sqrt( variance / statsPixel.samples );
 
-  return squared / ( statsPixel.mean + Spectrum(0.01f) );
-
-
-
+  return squared / Sqrt( statsPixel.mean * statsPixel.mean + Spectrum(1e-4) * Spectrum(1e-4) );
 
 }
 
@@ -136,7 +133,7 @@ bool Statistics::StopCriterion(Point2i pixel) const {
 
     // Control approximation error
 
-    return true;
+    return statsPixel.samples > maxSamples || Error(statsPixel).MaxComponentValue() <= errorThreshold;
 }
 
 long Statistics::ElapsedMilliseconds() const {
