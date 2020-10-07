@@ -85,6 +85,7 @@ void Statistics::SamplingLoop(Point2i pixel, const SamplingFunctor &sampleOnce){
           loop();
         while( !StopCriterion(pixel))
           loop();
+        break;
 
     case Mode::TIME:
         // We are in a batch, so take _batchSize_ samples
@@ -112,7 +113,15 @@ void Statistics::UpdateStats(Point2i pixel, Spectrum &&L) {
 }
 
 Float Statistics::Sampling(const Pixel &statsPixel) const {
-    return static_cast<Float>(statsPixel.samples);
+    switch (mode) {
+        case Mode::ERROR:
+            return static_cast<Float>(statsPixel.samples)/static_cast<Float>(maxSamples);
+        case Mode::TIME:
+            // We are in a batch, so take _batchSize_ samples
+        case Mode::NORMAL:
+            return static_cast<Float>(statsPixel.samples);
+    }
+
 }
 
 Spectrum Statistics::Variance(const Pixel &statsPixel) const {
@@ -133,7 +142,7 @@ bool Statistics::StopCriterion(Point2i pixel) const {
 
     // Control approximation error
 
-    return statsPixel.samples > maxSamples || Error(statsPixel).MaxComponentValue() <= errorThreshold;
+    return statsPixel.samples >= maxSamples || Error(statsPixel).MaxComponentValue() <= errorThreshold;
 }
 
 long Statistics::ElapsedMilliseconds() const {
