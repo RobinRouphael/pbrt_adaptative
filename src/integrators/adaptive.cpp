@@ -59,6 +59,9 @@ void Statistics::WriteImages() const {
 bool Statistics::StartNextBatch(int index) {
     switch (mode) {
     case Mode::TIME:
+        if(ElapsedMilliseconds() > targetSeconds*1000 || (index+1) * BatchSize() > maxSamples)
+            return false;
+        return true;
         // Is there enough time remaining to start the next batch?
         // Would the batch index + 1 respect the _maxSamples_ budget?
     default:
@@ -88,7 +91,9 @@ void Statistics::SamplingLoop(Point2i pixel, const SamplingFunctor &sampleOnce){
         break;
 
     case Mode::TIME:
-        // We are in a batch, so take _batchSize_ samples
+        for( long i = 0; i < BatchSize(); i++) //bootstrap
+            loop();
+        break;
     case Mode::NORMAL:
         for (long i = 0; i < maxSamples; ++i)
             loop();
@@ -115,10 +120,8 @@ void Statistics::UpdateStats(Point2i pixel, Spectrum &&L) {
 Float Statistics::Sampling(const Pixel &statsPixel) const {
     switch (mode) {
         case Mode::ERROR:
-            return static_cast<Float>(statsPixel.samples)/static_cast<Float>(maxSamples);
-        case Mode::TIME:
-            // We are in a batch, so take _batchSize_ samples
-        case Mode::NORMAL:
+            return (static_cast<Float>(statsPixel.samples)/static_cast<Float>(maxSamples));
+        default:
             return static_cast<Float>(statsPixel.samples);
     }
 
