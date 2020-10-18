@@ -5,6 +5,7 @@
 #include "paramset.h"
 #include "progressreporter.h"
 #include "stats.h"
+#include <boost/math/special_functions/erf.hpp>
 
 namespace pbrt {
 
@@ -26,6 +27,8 @@ Statistics::Statistics(const ParamSet &paramSet, const Film *originalFilm,
       targetSeconds(paramSet.FindOneInt("targetseconds", 60)),
       originalFilm(originalFilm),
       pixelBounds(originalFilm->croppedPixelBounds),
+      alpha(paramSet.FindOneFloat("alpha", 0.99)),
+      zconstant(ZConstant()),
       pixels(new Pixel[pixelBounds.Area()]) {}
 
 void Statistics::RenderBegin() {
@@ -59,6 +62,9 @@ void Statistics::WriteImages() const {
 bool Statistics::StartNextBatch(int index) {
     switch (mode) {
     case Mode::TIME:
+        if(ElapsedMilliseconds() > targetSeconds*1000 || (index+1) * BatchSize() > maxSamples)
+            return false;
+        return true;
         // Is there enough time remaining to start the next batch?
         // Would the batch index + 1 respect the _maxSamples_ budget?
     default:
@@ -79,14 +85,25 @@ void Statistics::SamplingLoop(Point2i pixel, const SamplingFunctor &sampleOnce){
     auto loop = [&]() { UpdateStats(pixel, sampleOnce()); };
 
     switch (mode) {
-    case Mode::ERROR:
-        // Divide render between bootstrap and adaptive phases
+
+
     case Mode::TIME:
-        // We are in a batch, so take _batchSize_ samples
+        for( long i = 0; i < BatchSize(); i++) //bootstrap
+            loop();
+        break;
     case Mode::NORMAL:
         for (long i = 0; i < maxSamples; ++i)
             loop();
         break;
+    default:
+        //ERROR
+        // Divide render between bootstrap and adaptive phases
+        for( long i = 0; i < minSamples; i++) //bootstrap
+            loop();
+        while( !StopCriterion(pixel))
+            loop();
+        break;
+
     }
 }
 
@@ -97,29 +114,49 @@ void Statistics::UpdateStats(Point2i pixel, Spectrum &&L) {
     long &samples = statsPixel.samples;
     Spectrum &mean = statsPixel.mean;
     Spectrum &moment2 = statsPixel.moment2;
+    samples += 1;
+    auto delta = L - mean;
+    mean += delta / samples;
+    auto delta2 = L - mean;
+    moment2 += delta * delta2;
 
     // Update the statistics above using Welford's online algorithm
 }
 
 Float Statistics::Sampling(const Pixel &statsPixel) const {
-    return static_cast<Float>(statsPixel.samples);
+    switch (mode) {
+        case Mode::ERROR:
+            return (static_cast<Float>(statsPixel.samples)/static_cast<Float>(maxSamples));
+        default:
+            return static_cast<Float>(statsPixel.samples);
+    }
+
 }
 
 Spectrum Statistics::Variance(const Pixel &statsPixel) const {
-    return 0;
+    return statsPixel.moment2 / ( statsPixel.samples - 1 );
 }
 
 Spectrum Statistics::Error(const Pixel &statsPixel) const {
-    return 0;
+  auto variance = Variance(statsPixel);
+  auto squared = Sqrt( variance / statsPixel.samples );
+  if(errorHeuristic == "standart")
+      return squared;
+  if(errorHeuristic == "relative")
+      return squared / Sqrt( statsPixel.mean * statsPixel.mean + Spectrum(1e-4) * Spectrum(1e-4) );
+  return (2 * (zconstant * squared)) / Sqrt( statsPixel.mean * statsPixel.mean + Spectrum(1e-4) * Spectrum(1e-4) );
+
+
+}
+
+float Statistics::ZConstant() const {
+    return boost::math::erf_inv((1 + alpha)/2);
 }
 
 bool Statistics::StopCriterion(Point2i pixel) const {
     if (!InsideExclusive(pixel, pixelBounds)) return true;
     const Pixel &statsPixel = GetPixel(pixel);
-
-    // Control approximation error
-
-    return true;
+    return statsPixel.samples >= maxSamples || Error(statsPixel).MaxComponentValue() <= errorThreshold;
 }
 
 long Statistics::ElapsedMilliseconds() const {
@@ -129,7 +166,7 @@ long Statistics::ElapsedMilliseconds() const {
 
 std::string Statistics::WorkTitle() const {
     std::string type = mode == Mode::TIME  ? "time"
-                     : mode == Mode::ERROR ? "error"
+                     : mode == Mode::ERROR? "error"
                      :                       "sampling";
     return "Rendering (equal " + type + ')';
 }
@@ -155,7 +192,9 @@ std::unique_ptr<Filter> Statistics::StatImagesFilter() {
     return std::unique_ptr<Filter>(new BoxFilter({0, 0}));
 }
 
-VolPathAdaptive::VolPathAdaptive(Statistics stats, int maxDepth,
+
+
+    VolPathAdaptive::VolPathAdaptive(Statistics stats, int maxDepth,
                                  std::shared_ptr<const Camera> camera,
                                  std::shared_ptr<Sampler> sampler,
                                  const Bounds2i &pixelBounds, Float rrThreshold,
@@ -177,8 +216,8 @@ void VolPathAdaptive::Render(const Scene &scene) {
     Point2i nTiles((sampleExtent.x + tileSize - 1) / tileSize,
                    (sampleExtent.y + tileSize - 1) / tileSize);
 
-    stats.RenderBegin();
-    ProgressReporter reporter(nTiles.x * nTiles.y, stats.WorkTitle());
+    stats.RenderBegin(); //Modified start time
+    ProgressReporter reporter(nTiles.x * nTiles.y, stats.WorkTitle()); //Modified
     for (int batch = 0; stats.StartNextBatch(batch); ++batch) {
         ParallelFor2D([&](Point2i tile) {
             // Render section of image corresponding to _tile_
@@ -206,7 +245,7 @@ void VolPathAdaptive::Render(const Scene &scene) {
                 {
                     ProfilePhase pp(Prof::StartPixel);
                     tileSampler->StartPixel(pixel);
-                    tileSampler->SetSampleNumber(batch * stats.BatchSize());
+                    tileSampler->SetSampleNumber(batch * stats.BatchSize()); //Modified
                 }
 
                 // Do this check after the StartPixel() call; this keeps
@@ -216,7 +255,7 @@ void VolPathAdaptive::Render(const Scene &scene) {
                 if (!InsideExclusive(pixel, pixelBounds))
                     continue;
 
-                stats.SamplingLoop(pixel, [&]() {
+                stats.SamplingLoop(pixel, [&]() { //Modified
                     // Initialize _CameraSample_ for current sample
                     CameraSample cameraSample =
                         tileSampler->GetCameraSample(pixel);
@@ -231,6 +270,8 @@ void VolPathAdaptive::Render(const Scene &scene) {
 
                     // Evaluate radiance along camera ray
                     Spectrum L(0.f);
+
+
                     if (rayWeight > 0)
                         L = Li(ray, scene, *tileSampler, arena, 0);
 

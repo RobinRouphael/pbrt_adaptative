@@ -22,7 +22,7 @@ class Statistics {
     // - normal: render using an uniform number of samples throughout the image
     // - error: render with an adaptive number of samples according to the error
     // - time: render with a fixed target computation time
-    enum class Mode {NORMAL, ERROR, TIME};
+    enum class Mode {NORMAL, ERROR, TIME, ERROR_RELATIVE, ERROR_CONFIDENCE};
 
     // A steady clock gives the most robust estimation of computation time
     using Clock = std::chrono::steady_clock;
@@ -85,6 +85,8 @@ class Statistics {
 
     // For all modes, the maximum number of samples that can be drawn
     const long maxSamples;
+    const float alpha;
+    const float zconstant;
 
     // For error mode:
     // - the minimum number of samples used to estimate the statistics
@@ -129,6 +131,8 @@ class Statistics {
     // @return If the pixel should stop being rendered, e.g. if the maximum
     //         number of samples was reached or the error is below the threshold
     bool StopCriterion(Point2i pixel) const;
+
+    float ZConstant() const;
 
     // @return The elapsed time from the beginning of the render, in ms
     long ElapsedMilliseconds() const;

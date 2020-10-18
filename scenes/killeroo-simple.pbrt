@@ -2,7 +2,7 @@
 LookAt 400 20 30   0 63 -110   0 0 1
 Rotate -5 0 0 1
 Camera "perspective" "float fov" [39]
-Film "image"  
+Film "image"
 "integer xresolution" [500] "integer yresolution" [500]
     "string filename" "killeroo-simple.exr"
 
@@ -49,8 +49,8 @@ Rotate -60 0 0 1
         "float roughness" [.025]
 Translate 100 200 -140
     Include "geometry/killeroo.pbrt"
-    Material "plastic" "color Ks" [.3 .3 .3] "color Kd" [.4 .5 .4]
-        "float roughness" [.15] 
+    Material "glass" "color Ks" [.3 .3 .3] "color Kd" [.4 .5 .4]
+        "float roughness" [.15]
 Translate -200 0 0
     Include "geometry/killeroo.pbrt"
 

@@ -1,7 +1,10 @@
 *~
-src/build
-src/bin
+/build/
+/bin/
+/cmake-build-debug/
+/cmake-build-release/
 src/objs
 .sconsign.dblite
 .idea/
 cmake-*/
+/scenes/pbrt-v3-scenes/

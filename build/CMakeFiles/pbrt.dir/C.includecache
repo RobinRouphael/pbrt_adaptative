@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModel.c
+ArHosekSkyModel.h
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModel.h
+ArHosekSkyModelData_Spectral.h
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModelData_Spectral.h
+ArHosekSkyModelData_CIEXYZ.h
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModelData_CIEXYZ.h
+ArHosekSkyModelData_RGB.h
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModelData_RGB.h
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModel.h
+
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModelData_CIEXYZ.h
+
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModelData_RGB.h
+
+/home/rpr2264a/pbrt-adaptive/src/ext/ArHosekSkyModelData_Spectral.h
+

@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++  -std=c++98 -Wall -Wextra -pedantic  -std=gnu++11 -Wno-conversion-null -O2 -DNDEBUG  -rdynamic CMakeFiles/ptxinfo.dir/ptxinfo.cpp.o  -o ptxinfo -Wl,-rpath,/opt/ccp4/lib: ../ptex/libPtex.a /opt/ccp4/lib/libz.so -lpthread 
