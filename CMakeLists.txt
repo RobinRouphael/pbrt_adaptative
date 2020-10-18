@@ -56,9 +56,17 @@ if(NOT IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/src/ext/zlib/doc")
     "pbrt before it was added. It is possible to recover by running "
     "\"git submodule update --init --recursive\"")
 endif()
-
+set(BOOST_INCLUDEDIR "usr/include")
+set(BOOST_LIBRARYDIR "usr/lib64")
+set(Boost_DEBUG 1)
 FIND_PACKAGE ( Sanitizers )
 FIND_PACKAGE ( Threads )
+FIND_PACKAGE ( Boost COMPONENTS REQUIRED)
+if (Boost_FOUND)
+  include_directories(${Boost_INCLUDE_DIRS})
+  link_libraries( ${Boost_LIBRARIES} )
+endif()
+add_link_options(-L/${BOOST_LIBRARYDIR} --verbose)
 
 IF(CMAKE_BUILD_TYPE MATCHES RELEASE)
   ADD_DEFINITIONS (-DNDEBUG)
@@ -525,6 +533,8 @@ ADD_SANITIZERS ( pbrt_exe )
 SET_TARGET_PROPERTIES ( pbrt_exe PROPERTIES OUTPUT_NAME pbrt )
 TARGET_COMPILE_FEATURES ( pbrt_exe PRIVATE ${PBRT_CXX11_FEATURES} )
 TARGET_LINK_LIBRARIES ( pbrt_exe ${ALL_PBRT_LIBS} )
+TARGET_LINK_LIBRARIES ( pbrt_exe Boost::boost)
+
 
 # Tools
 ADD_EXECUTABLE ( bsdftest src/tools/bsdftest.cpp )

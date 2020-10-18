@@ -5,6 +5,7 @@
 #include "paramset.h"
 #include "progressreporter.h"
 #include "stats.h"
+#include <boost/math/special_functions/erf.hpp>
 
 namespace pbrt {
 
@@ -26,6 +27,8 @@ Statistics::Statistics(const ParamSet &paramSet, const Film *originalFilm,
       targetSeconds(paramSet.FindOneInt("targetseconds", 60)),
       originalFilm(originalFilm),
       pixelBounds(originalFilm->croppedPixelBounds),
+      alpha(paramSet.FindOneFloat("alpha", 0.99)),
+      zconstant(ZConstant()),
       pixels(new Pixel[pixelBounds.Area()]) {}
 
 void Statistics::RenderBegin() {
@@ -82,13 +85,7 @@ void Statistics::SamplingLoop(Point2i pixel, const SamplingFunctor &sampleOnce){
     auto loop = [&]() { UpdateStats(pixel, sampleOnce()); };
 
     switch (mode) {
-    case Mode::ERROR:
-        // Divide render between bootstrap and adaptive phases
-        for( long i = 0; i < minSamples; i++) //bootstrap
-          loop();
-        while( !StopCriterion(pixel))
-          loop();
-        break;
+
 
     case Mode::TIME:
         for( long i = 0; i < BatchSize(); i++) //bootstrap
@@ -98,6 +95,15 @@ void Statistics::SamplingLoop(Point2i pixel, const SamplingFunctor &sampleOnce){
         for (long i = 0; i < maxSamples; ++i)
             loop();
         break;
+    default:
+        //ERROR
+        // Divide render between bootstrap and adaptive phases
+        for( long i = 0; i < minSamples; i++) //bootstrap
+            loop();
+        while( !StopCriterion(pixel))
+            loop();
+        break;
+
     }
 }
 
@@ -132,19 +138,24 @@ Spectrum Statistics::Variance(const Pixel &statsPixel) const {
 }
 
 Spectrum Statistics::Error(const Pixel &statsPixel) const {
-  auto variance = statsPixel.moment2 / ( statsPixel.samples - 1 );
+  auto variance = Variance(statsPixel);
   auto squared = Sqrt( variance / statsPixel.samples );
+  if(errorHeuristic == "standart")
+      return squared;
+  if(errorHeuristic == "relative")
+      return squared / Sqrt( statsPixel.mean * statsPixel.mean + Spectrum(1e-4) * Spectrum(1e-4) );
+  return (2 * (zconstant * squared)) / Sqrt( statsPixel.mean * statsPixel.mean + Spectrum(1e-4) * Spectrum(1e-4) );
 
-  return squared / Sqrt( statsPixel.mean * statsPixel.mean + Spectrum(1e-4) * Spectrum(1e-4) );
 
+}
+
+float Statistics::ZConstant() const {
+    return boost::math::erf_inv((1 + alpha)/2);
 }
 
 bool Statistics::StopCriterion(Point2i pixel) const {
     if (!InsideExclusive(pixel, pixelBounds)) return true;
     const Pixel &statsPixel = GetPixel(pixel);
-
-    // Control approximation error
-
     return statsPixel.samples >= maxSamples || Error(statsPixel).MaxComponentValue() <= errorThreshold;
 }
 
@@ -155,7 +166,7 @@ long Statistics::ElapsedMilliseconds() const {
 
 std::string Statistics::WorkTitle() const {
     std::string type = mode == Mode::TIME  ? "time"
-                     : mode == Mode::ERROR ? "error"
+                     : mode == Mode::ERROR? "error"
                      :                       "sampling";
     return "Rendering (equal " + type + ')';
 }
@@ -181,7 +192,9 @@ std::unique_ptr<Filter> Statistics::StatImagesFilter() {
     return std::unique_ptr<Filter>(new BoxFilter({0, 0}));
 }
 
-VolPathAdaptive::VolPathAdaptive(Statistics stats, int maxDepth,
+
+
+    VolPathAdaptive::VolPathAdaptive(Statistics stats, int maxDepth,
                                  std::shared_ptr<const Camera> camera,
                                  std::shared_ptr<Sampler> sampler,
                                  const Bounds2i &pixelBounds, Float rrThreshold,
